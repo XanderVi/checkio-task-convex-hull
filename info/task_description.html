@@ -1,39 +1,40 @@
 <p>
-    <i>( Describe task in general )</i>
-</p>
+    Given a list of points on a coordinate plane, find the convex hull formed by these points.
+    The convex hull of a set X of points in the Euclidean plane is the smallest convex set that contains X.
+    For instance, when X is a bounded subset of the plane, the convex hull may be visualized as the shape
+    formed by a rubber band stretched around X. If a point lies on edge, it's included.
+    <a href="http://en.wikipedia.org/wiki/Convex_hull">You can read more about a convex hull on Wikipedia</a></p>
 
-<p>
-    Sum two passed ints
-</p>
+<p>The points are presented as a list of coordinates -- [x, y], in which x and y are integers.
+    The result returns as a sequence of indexes of points in the given list; points lie on the convex hull in clockwise
+    order (see picture).
+    The sequence starts from the leftmost point, but if there are several such points,
+    then start from the bottom-most left of them.(Example [[1, 1], [1, 2], [2,0]] - start from [1, 1] -- index 0).
+    Remember: You should return a list of indexes--not the points themselves.
 
-<p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
-</p>
+<p class="for_info_only" style="text-align: center"><img title="convex-hull"
+                                                         src="{{ MEDIA }}convex-hull.png"
+                                                         alt="convex-hull"
+                                                         width="600px"/></p>
+<p class="for_editor_only" style="text-align: center"><img title="convex-hull"
+                                                           src="{{ MEDIA }}convex-hull.png"
+                                                           alt="convex-hull"
+                                                           width="380px"/></p>
 
-<p><i>( Explain input and output values )</i></p>
-<p>
-    <strong>Input: </strong> Two arguments. Both are int
-</p>
+<p><strong>Input: </strong>A list of points. Each point is a list of two integers (coordinates).</p>
 
-<p>
-    <strong>Output: </strong> Int. 
-</p>
-
-
+<p><strong>Output: </strong>A list of indexes of points from given list.</p>
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
-    <p>
-        <strong>Example:</strong>
-    </p>
-    <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
-    </pre>
+    <p><strong>Example:</strong></p>
+    <pre class="brush: python">checkio([[7,6],[8,4],[7,2],[3,2],[1,6],[1,8],[4,9]]) == [4, 5, 6, 0, 1, 2, 3]</pre>
 </div>
+
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
+    The problem of finding convex hulls finds its practical applications in pattern recognition, image processing,
+    statistics, GIS and static code analysis by abstract interpretation. It also serves as a tool, a building block for
+    a number of other computational-geometric algorithms such as the rotating calipers method for computing the width
+    and diameter of a point set.
 </p>
