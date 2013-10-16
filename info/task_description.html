@@ -1,15 +1,14 @@
 <p>
-    Given a list of points on a coordinate plane, find the convex hull formed by these points.
+    You are given a list of points on a coordinate plane. We need you find the convex hull formed by these points.
     The convex hull of a set X of points in the Euclidean plane is the smallest convex set that contains X.
-    For instance, when X is a bounded subset of the plane, the convex hull may be visualized as the shape
+    For instance: when X is a bounded subset of the plane, the convex hull may be visualized as the shape
     formed by a rubber band stretched around X. If a point lies on edge, it's included.
     <a href="http://en.wikipedia.org/wiki/Convex_hull">You can read more about a convex hull on Wikipedia</a></p>
 
-<p>The points are presented as a list of coordinates -- [x, y], in which x and y are integers.
+<p>The points are presented as a list of coordinates [x, y] in which x and y are integers.
     The result returns as a sequence of indexes of points in the given list; points lie on the convex hull in clockwise
-    order (see picture).
-    The sequence starts from the leftmost point, but if there are several such points,
-    then start from the bottom-most left of them.(Example [[1, 1], [1, 2], [2,0]] - start from [1, 1] -- index 0).
+    order (see the picture).
+    The sequence starts from the bottom leftmost point.
     Remember: You should return a list of indexes--not the points themselves.
 
 <p class="for_info_only" style="text-align: center"><img title="convex-hull"
@@ -21,9 +20,9 @@
                                                            alt="convex-hull"
                                                            width="380px"/></p>
 
-<p><strong>Input: </strong>A list of points. Each point is a list of two integers (coordinates).</p>
+<p><strong>Input: </strong>A list of coordinates. Each coordinate is a list of two integers.</p>
 
-<p><strong>Output: </strong>A list of indexes of points from given list.</p>
+<p><strong>Output: </strong>A list of indexes of coordinates from a given list.</p>
 
 <div class="for_info_only">
     <p><strong>Example:</strong></p>
@@ -33,8 +32,8 @@
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    The problem of finding convex hulls finds its practical applications in pattern recognition, image processing,
-    statistics, GIS and static code analysis by abstract interpretation. It also serves as a tool, a building block for
+    The problem of finding convex hulls has practical applications in pattern recognition, image processing,
+    statistics, GIS and static code analysis by abstract interpretation. It also serves as a tool and a building block for
     a number of other computational-geometric algorithms such as the rotating calipers method for computing the width
     and diameter of a point set.
 </p>
