@@ -61,9 +61,9 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
             }
 
             paper.path(createPath(zx, fullSizeN[1] - zy / 2, zx, zy / 2)).attr(attrAxis);
-            paper.text(zx / 2, zy / 2, "X").attr(attrText);
+            paper.text(zx / 2, zy / 2, "Y").attr(attrText);
             paper.path(createPath(zx / 2, fullSizeN[1] - zy, fullSizeN[0] - zx / 2, fullSizeN[1] - zy)).attr(attrAxis);
-            paper.text(fullSizeN[0] - zx / 2, fullSizeN[1] - zy / 2, "Y").attr(attrText);
+            paper.text(fullSizeN[0] - zx / 2, fullSizeN[1] - zy / 2, "X").attr(attrText);
             paper.text(zx / 2, fullSizeN[1] - zy / 2, "0").attr(attrText);
 
 
@@ -230,8 +230,8 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
             tPointSet = tCanvas.set();
             tEdgeSet = tCanvas.set();
             $tryit.find(".tryit-canvas").width(fullSizeN[0]);
-            $tryit.find(".tool .btn:parent").height(fullSizeN[1] / 6);
-            $tryit.find(".tool .bn-reset").css("margin-top", cellSize);
+//            $tryit.find(".tool .btn:parent").height(fullSizeN[1] / 6);
+//            $tryit.find(".tool .bn-reset").css("margin-top", cellSize);
 
             createPlane(tCanvas);
             var activeRect = tCanvas.rect(zx + 0.5 * cellSize, fullSizeN[1] - zy - cellSize * (cellN + 0.5),

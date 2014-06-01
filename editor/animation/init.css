@@ -34,7 +34,7 @@
 .animation-content{
     background-color: #dfe8f7;
     color: #696969;
-    font-family: verdana;
+    font-family: Verdana,Geneva, sans-serif;;
     font-size: 15px;
     width: 100%;
 }
@@ -60,7 +60,7 @@
 
 .tryit-content {
     background-color: #dfe8f7;
-    font-family: verdana;
+    font-family: Verdana,Geneva, sans-serif;;
 }
 
 .tryit-content .tool td{
@@ -84,7 +84,7 @@
 .tryit-content .btn {
     padding: 4px 6px;
     font-size: 14px;
-    font-family: Verdana;
+    font-family: Verdana,Geneva, sans-serif;
     font-weight: 500;
     line-height: 1.428571429;
     text-align: center;
@@ -94,6 +94,8 @@
     border: 1px solid transparent;
     border-radius: 4px;
     background-color: #8FC7ED;
+    width: 100px;
+    margin-top: 20px;
 }
 
 .tryit-content .btn:focus {
