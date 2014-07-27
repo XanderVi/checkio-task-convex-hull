@@ -1,28 +1,39 @@
 <p>
-    You are given a list of points on a coordinate plane. We need you find the convex hull formed by these points.
-    The convex hull of a set X of points in the Euclidean plane is the smallest convex set that contains X.
+    You are given a list of points on a coordinate plane.
+    We need you find the convex hull formed by these points.
+    The <a href="http://en.wikipedia.org/wiki/Convex_hull">convex hull</a> of a set X of points
+    in the Euclidean plane is the smallest convex set that contains X.
     For instance: when X is a bounded subset of the plane, the convex hull may be visualized as the shape
     formed by a rubber band stretched around X. If a point lies on edge, it's included.
-    <a href="http://en.wikipedia.org/wiki/Convex_hull">You can read more about a convex hull on Wikipedia</a></p>
+</p>
 
-<p>The points are presented as a list of coordinates [x, y] in which x and y are integers.
+<p>
+    The points are presented as a list of coordinates [x, y] in which x and y are integers.
     The result returns as a sequence of indexes of points in the given list; points lie on the convex hull in clockwise
     order (see the picture).
     The sequence starts from the bottom leftmost point.
     Remember: You should return a list of indexes--not the points themselves.
+</p>
 
-<p class="for_info_only" style="text-align: center"><img title="convex-hull"
-                                                         src="{{ MEDIA }}convex-hull.png"
-                                                         alt="convex-hull"
-                                                         width="600px"/></p>
-<p class="for_editor_only" style="text-align: center"><img title="convex-hull"
-                                                           src="{{ MEDIA }}convex-hull.png"
-                                                           alt="convex-hull"
-                                                           width="380px"/></p>
+<p class="for_info_only" style="text-align: center">
+    <img title="convex-hull"
+         src="{{ MEDIA }}convex-hull.png"
+         alt="convex-hull"
+         width="600px"/></p>
+<p class="for_editor_only" style="text-align: center">
+    <img title="convex-hull"
+         src="{{ MEDIA }}convex-hull.png"
+         alt="convex-hull"
+         width="380px"/>
+</p>
 
-<p><strong>Input: </strong>A list of coordinates. Each coordinate is a list of two integers.</p>
+<p>
+    <strong>Input: </strong>A list of coordinates. Each coordinate is a list of two integers.
+</p>
 
-<p><strong>Output: </strong>The list of indexes of coordinates from the given list.</p>
+<p>
+    <strong>Output: </strong>The list of indexes of coordinates from the given list.
+</p>
 
 <div class="for_info_only">
     <p><strong>Example:</strong></p>
@@ -40,8 +51,7 @@ checkio([[3, 8], [1, 6], [6, 2], [7, 6], [5, 5], [8, 4], [6, 8]]) == [1, 0, 6, 3
 </p>
 
 
-
 <p><strong>Precondition: </strong><br>
-    2 < |coordinates| < 10<br>
-    &forall; x,y ∈ coordinates : 0 < x,y < 10
+    2 &lt; len(coordinates) &lt; 10<br>
+    all(0 &lt; x &lt; 10 and 0 &lt; x &lt; 10 for x, y in coordinates)
 </p>
