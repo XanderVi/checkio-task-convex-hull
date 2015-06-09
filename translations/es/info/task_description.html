@@ -1,0 +1,64 @@
+<p>
+  Se te dar&aacute; una lista de puntos en un plano de coordenadas y deber&aacute;s encontrar
+  la envolvente convexa de dichos puntos.
+  La <a href="http://en.wikipedia.org/wiki/Convex_hull">envolvente convexa</a> de
+  un conjunto de X puntos en el plano euclidiano corresponde al set convexo
+  m&aacute;s peque&ntilde;o que contiene X. Por ejemplo, cuando X es un subconjunto acotado
+  del plano, la envolvente convexa puede ser visualizada como el contorno
+  formado por una banda el&aacute;stica estirada alrededor de X. Si un punto se
+  encuentra en el borde, quedar&aacute; incluido en dicha banda.
+</p>
+
+<p>
+  Los puntos se presentan como una lista de coordenadas [x, y] en la que x e y
+  son enteros (<em>int</em>). Deber&aacute;s entregar el resultado como una secuencia de los
+  &iacute;ndices correspondientes a la envolvente, en sentido horario (ver la imagen).
+  La secuencia se inicia desde el punto ubicado en el extremo inferior
+  izquierdo. Recuerda: Deber&aacute;s devolver una lista de &iacute;ndices y no los puntos
+  de por s&iacute;.
+</p>
+
+<p class="for_info_only" style="text-align: center">
+    <img title="convex-hull"
+         src="{{ MEDIA }}convex-hull.png"
+         alt="convex-hull"
+         width="600px"/></p>
+<p class="for_editor_only" style="text-align: center">
+    <img title="convex-hull"
+         src="{{ MEDIA }}convex-hull.png"
+         alt="convex-hull"
+         width="380px"/>
+</p>
+
+<p>
+    <strong>Datos de Entrada: </strong>Una lista de coordenadas. Cada
+    coordenada es una lista de dos enteros (<em>int</em>).
+</p>
+
+<p>
+    <strong>Salida: </strong>La envolvente como una lista de los
+    &iacute;ndices de las coordenadas, a partir de la lista dada.
+</p>
+
+<div class="for_info_only">
+    <p><strong>Ejemplo:</strong></p>
+    <pre class="brush: python">checkio([[7, 6], [8, 4], [7, 2], [3, 2], [1, 6], [1, 8], [4, 9]]) == [4, 5, 6, 0, 1, 2, 3]
+checkio([[3, 8], [1, 6], [6, 2], [7, 6], [5, 5], [8, 4], [6, 8]]) == [1, 0, 6, 3, 5, 2]</pre>
+</div>
+
+
+<p class="for_info_only">
+    <strong>&iquest;C&oacute;mo se usa?:</strong>
+    Las envolventes convexas tienen aplicaciones pr&aacute;cticas en el reconocimiento
+    de patrones, procesamiento de im&aacute;genes, estad&iacute;sticas, SIG y an&aacute;lisis est&aacute;tico
+    de c&oacute;digo por interpretaci&oacute;n abstracta. El concepto tambi&eacute;n sirve como una
+    herramienta y un bloque de construcci&oacute;n para numerosos algoritmos de
+    geometr&iacute;a computacional, tales como el m&eacute;todo de pinzas de rotaci&oacute;n para
+    el c&aacute;lculo del ancho y el di&aacute;metro de un conjunto de puntos.
+</p>
+
+
+<p><strong>Condiciones: </strong><br>
+    2 &lt; len(coordinates) &lt; 10<br>
+    all(0 &lt; x &lt; 10 and 0 &lt; x &lt; 10 for x, y in coordinates)
+</p>
