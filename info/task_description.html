@@ -1,15 +1,15 @@
 <p>
     You are given a list of points on a coordinate plane.
-    We need you find the convex hull formed by these points.
-    The <a href="http://en.wikipedia.org/wiki/Convex_hull">convex hull</a> of a set X of points
+    We need you to find the convex hull formed by these points.
+    The <a href="http://en.wikipedia.org/wiki/Convex_hull">convex hull</a> of an X set of points
     in the Euclidean plane is the smallest convex set that contains X.
     For instance: when X is a bounded subset of the plane, the convex hull may be visualized as the shape
     formed by a rubber band stretched around X. If a point lies on edge, it's included.
 </p>
 
 <p>
-    The points are presented as a list of coordinates [x, y] in which x and y are integers.
-    The result returns as a sequence of indexes of points in the given list; points lie on the convex hull in clockwise
+    The points are presented as a list of coordinates [x, y] in which x and y are the integers.
+    The result returns as a sequence of points indexes in the given list; points lie on the convex hull in a clockwise
     order (see the picture).
     The sequence starts from the bottom leftmost point.
     Remember: You should return a list of indexes--not the points themselves.
@@ -32,7 +32,7 @@
 </p>
 
 <p>
-    <strong>Output: </strong>The list of indexes of coordinates from the given list.
+    <strong>Output: </strong>The list of coordinates indexes from the given list.
 </p>
 
 <div class="for_info_only">
@@ -62,3 +62,5 @@ convex_hull([[3, 8], [1, 6], [6, 2], [7, 6], [5, 5], [8, 4], [6, 8]]) == [1, 0, 
     2 &lt; len(coordinates) &lt; 10<br>
     all(0 &lt; x &lt; 10 and 0 &lt; x &lt; 10 for x, y in coordinates)
 </p>
+
+
