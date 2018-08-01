@@ -1,4 +1,4 @@
-def checkio(data):
+def convex_hull(data):
     """list[list[int, int],] -> list[int,]
     Find the convex hull.
     """

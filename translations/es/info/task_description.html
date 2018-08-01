@@ -42,8 +42,15 @@
 
 <div class="for_info_only">
     <p><strong>Ejemplo:</strong></p>
-    <pre class="brush: python">checkio([[7, 6], [8, 4], [7, 2], [3, 2], [1, 6], [1, 8], [4, 9]]) == [4, 5, 6, 0, 1, 2, 3]
-checkio([[3, 8], [1, 6], [6, 2], [7, 6], [5, 5], [8, 4], [6, 8]]) == [1, 0, 6, 3, 5, 2]</pre>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">
+convexHull([[7, 6], [8, 4], [7, 2], [3, 2], [1, 6], [1, 8], [4, 9]]) == [4, 5, 6, 0, 1, 2, 3]
+convexHull([[3, 8], [1, 6], [6, 2], [7, 6], [5, 5], [8, 4], [6, 8]]) == [1, 0, 6, 3, 5, 2]</pre>
+{% else %}
+<pre class="brush: python">
+convex_hull([[7, 6], [8, 4], [7, 2], [3, 2], [1, 6], [1, 8], [4, 9]]) == [4, 5, 6, 0, 1, 2, 3]
+convex_hull([[3, 8], [1, 6], [6, 2], [7, 6], [5, 5], [8, 4], [6, 8]]) == [1, 0, 6, 3, 5, 2]</pre>
+{% endif %}</pre>
 </div>
 
 
